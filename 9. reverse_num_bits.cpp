@@ -16,6 +16,14 @@ int func (int num)
     return ~num;
 }
 
+int func2 (int num)
+{
+    int d=0, r=0;
+    d = num /2;
+    r = num%2;
+    char result = 0xff <<(d+r);
+    return (~(num | result));
+}
 
 int main()
 {
